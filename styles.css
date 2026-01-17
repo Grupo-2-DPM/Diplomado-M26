@@ -1,3 +1,136 @@
-/* styles.css */
+:root {
+  --primary: #2563eb;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+  font-family: 'Inter', system-ui, sans-serif;
+}
 
-/* Add styles here to customize the appearance of your app */
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background .3s, color .3s;
+}
+
+body.theme-dark {
+  --bg: #0b1220;
+  --card: #071022;
+  --text: #e5eef9;
+  --muted: #94a3b8;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 3rem 0;
+  border-radius: 0 0 32px 32px;
+  box-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: .3rem;
+}
+
+.hero p {
+  opacity: .9;
+}
+
+/* CONTENT */
+.content {
+  margin-top: 3rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* PROFILE CARDS */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--card);
+  padding: 1.2rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info h3 {
+  font-size: 1.05rem;
+  margin-bottom: .2rem;
+}
+
+.profile-info span {
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* AUTHORS */
+.author-card {
+  display: flex;
+  gap: 1.5rem;
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
+.avatar-lg {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* TEXT */
+.lead-text {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+/* TECH */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 1rem;
+}
+
+.tech-card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 3rem 0 2rem;
+}

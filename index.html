@@ -1,143 +1,122 @@
 <!doctype html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Diplomado-MA26 — Grupo 2</title>
+  <title>Diplomado-MA26 · Grupo 2</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-light text-dark">
-  <header class="bg-primary text-white py-4 mb-4">
-    <div class="container">
-      <h1 class="h2 mb-0">Diplomado-MA26 — Grupo 2</h1>
-      <p class="mb-0">README profesional — versión Bootstrap</p>
+<body>
+
+<header class="hero">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <h1>Diplomado MA26</h1>
+      <p>Grupo 2 · Presentación del proyecto Saber Pro</p>
     </div>
-  </header>
+    <button id="theme-toggle" class="btn btn-outline-light btn-sm">
+      Cambiar tema
+    </button>
+  </div>
+</header>
 
-  <main class="container mb-5">
-    <section class="mb-4">
-      <h2 class="h4">Integrantes</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 mt-2">
+<main class="container content">
 
-        <div class="col">
-          <div class="card h-100 text-center">
-            <img src="img/nidia.jpg" class="card-img-top" alt="Nidia">
-            <div class="card-body p-1">
-              <h5 class="card-title h6">Nidia Jael Muñoz Oviedo</h5>
-              <p class="card-text small text-muted">222034025</p>
-            </div>
-          </div>
-        </div>
+  <!-- INTEGRANTES -->
+  <section>
+    <h2 class="section-title">Integrantes</h2>
 
-        <div class="col">
-          <div class="card h-100 text-center">
-            <img src="img/Marily.jpeg" class="card-img-top" alt="Marily">
-            <div class="card-body p-1">
-              <h5 class="card-title h6">Marily Yojana Botina Galeano</h5>
-              <p class="card-text small text-muted">222034053</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 text-center">
-            <img src="img/Omar.jpeg" class="card-img-top" alt="Omar">
-            <div class="card-body p-1">
-              <h5 class="card-title h6">Omar Jhon Hualpa Ascuntar</h5>
-              <p class="card-text small text-muted">220034146</p>
-            </div>
-          </div>
-        </div>
-
+    <div class="author-card">
+      <img src="img/avatar-placeholder.png" class="avatar-lg" alt="">
+      <div>
+        <h3>Henry Fabian Guillen Villacorte</h3>
+        <span>222034041</span>
+        <p>Backend e IA. Python, Java, PostgreSQL. Diseño de sistemas escalables.</p>
       </div>
-    </section>
+    </div>
 
-    <section class="mb-4">
-      <h2 class="h4">Información de los autores</h2>
-      <div class="row g-3 mt-2">
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h6">Henry Fabian Guillen Villacorte</h3>
-              <p class="mb-0">Desarrollador de software con enfoque en backend e inteligencia artificial. Trabajo con
-                Python, Java y PostgreSQL; me interesa diseñar soluciones escalables y basadas en datos.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h6">Nidia Jael Muñoz Oviedo</h3>
-              <p class="mb-0">Estudiante y entusiasta del desarrollo de software. Conocimientos en Python, JavaScript,
-                TypeScript y PostgreSQL. Interesada en proyectos prácticos para fortalecer habilidades.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h6">Daniel Alejandro Lasso Molina</h3>
-              <p class="mb-0">Desarrollador Backend — TypeScript, JavaScript y Python. Especializado en Node.js y
-                Django; manejo experto de PostgreSQL y MySQL. github.com/Gebertwo</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h6">Omar Jhon Hualpa Ascuntar</h3>
-              <p class="mb-0">Desarrollador con interés en aplicaciones web y arquitectura; experiencia en C#, .NET y
-                SQL. Enfocado en soluciones modulares y mantenibles.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="h6">Marily Yojana Botina Galeano</h3>
-              <p class="mb-0">Estudiante con interés en frontend. Conocimientos básicos en Python y PostgreSQL; motivada
-                en metodologías ágiles y mejora continua.</p>
-            </div>
-          </div>
-        </div>
+    <div class="author-card">
+      <img src="img/nidia.jpg" class="avatar-lg" alt="">
+      <div>
+        <h3>Nidia Jael Muñoz Oviedo</h3>
+        <span>222034025</span>
+        <p>Python, JavaScript y TypeScript. Enfoque práctico y aprendizaje continuo.</p>
       </div>
-    </section>
+    </div>
 
-    <section class="mb-4">
-      <h2 class="h4">Descripción del problema</h2>
-      <p class="mt-2">Los estudiantes de pregrado tienen dificultades para acceder a herramientas integrales y
-        accesibles para prepararse para el examen Saber Pro. La oferta actual suele ser dispersa, poco personalizada o
-        de difícil acceso, limitando una preparación estructurada y realista.</p>
-      <p>Propuesta: desarrollar una plataforma web que centralice recursos académicos, facilite el estudio autónomo y
-        brinde un entorno flexible y accesible para la preparación del examen Saber Pro, optimizando rendimiento y
-        equidad.</p>
-    </section>
-
-    <section class="mb-4">
-      <h2 class="h4">Stack tecnológico</h2>
-      <div class="row mt-2">
-        <div class="col-sm-6">
-          <ul class="list-unstyled">
-            <li><strong>Frontend:</strong> React.js + TypeScript</li>
-            <li><strong>UI:</strong> Bootstrap</li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <ul class="list-unstyled">
-            <li><strong>Backend:</strong> Java (Spring Boot sugerido)</li>
-            <li><strong>DB:</strong> PostgreSQL</li>
-          </ul>
-        </div>
+    <div class="author-card">
+      <img src="img/avatar-placeholder.png" class="avatar-lg" alt="">
+      <div>
+        <h3>Daniel Alejandro Lasso Molina</h3>
+        <span>222034024</span>
+        <p>Backend Node.js y Django. PostgreSQL y MySQL. github.com/Gebertwo</p>
       </div>
-    </section>
-    <footer class="pt-4 mt-4 border-top">
-      <p class="mb-0">Equipo: Grupo 2 — Diplomado-MA26</p>
-    </footer>
-  </main>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="author-card">
+      <img src="img/Marily.jpeg" alt="Marily" class="avatar-lg" alt="">
+      <div>
+        <h3>Marily Yojana Botina Galeano</h3>
+        <span>222034053</span>
+        <p>
+          Estudiante con interés en frontend. Conocimientos básicos en Python y PostgreSQL; motivada
+          en metodologías ágiles y mejora continua.
+        </p>
+      </div>
+    </div>
+
+    <div class="author-card">
+      <img src="img/Omar.jpeg" alt="Omar" class="avatar-lg" alt="">
+      <div>
+        <h3>Omar Jhon Hualpa Ascuntar</h3>
+        <span>220034146</span>
+        <p>
+          Desarrollador con interés en aplicaciones web y arquitectura; experiencia en C#, .NET y
+          SQL. Enfocado en soluciones modulares y mantenibles.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section>
+    <h2 class="section-title">Problema y propuesta</h2>
+    <p class="lead-text">
+      Los estudiantes presentan dificultades para acceder a herramientas integrales,
+      accesibles y estructuradas para la preparación del examen Saber Pro.
+    </p>
+    <p>
+      Proponemos una plataforma web moderna, centralizada y flexible que optimice
+      la preparación académica mediante recursos personalizados.
+    </p>
+  </section>
+
+  <!-- STACK -->
+  <section>
+    <h2 class="section-title">Stack tecnológico</h2>
+    <div class="tech-grid">
+      <div class="tech-card">React + TypeScript</div>
+      <div class="tech-card">Bootstrap UI</div>
+      <div class="tech-card">Java · Spring Boot</div>
+      <div class="tech-card">PostgreSQL</div>
+    </div>
+  </section>
+
+  <footer>
+    Grupo 2 · Diplomado MA26 · 2026
+  </footer>
+
+</main>
+
+<script src="renderer.js" defer></script>
 </body>
-
 </html>
