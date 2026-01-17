@@ -1,122 +1,500 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Diplomado-MA26 · Grupo 2</title>
-
-  <!-- Bootstrap -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plataforma Saber Pro — Grupo 2</title>
+  
+  <!-- Fonts optimizadas para legibilidad -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap base -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
+  
+  <!-- Custom styles -->
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Meta tags para accesibilidad -->
+  <meta name="description" content="Plataforma de preparación Saber Pro desarrollada por el Grupo 2 del Diplomado MA26">
+  <meta name="theme-color" content="#4f46e5">
 </head>
-
 <body>
 
-<header class="hero">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div>
-      <h1>Diplomado MA26</h1>
-      <p>Grupo 2 · Presentación del proyecto Saber Pro</p>
-    </div>
-    <button id="theme-toggle" class="btn btn-outline-light btn-sm">
-      Cambiar tema
-    </button>
-  </div>
-</header>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-<main class="container content">
+  <!-- NAV mejorada -->
+  <nav class="nav-bar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-container container">
+      <div class="brand">
+        <span class="logo">G2</span>
+        <span class="brand-name">Saber Pro</span>
+      </div>
 
-  <!-- INTEGRANTES -->
-  <section>
-    <h2 class="section-title">Integrantes</h2>
+      <div class="nav-links" role="menubar">
+        <a href="#integrantes" role="menuitem" class="nav-link">
+          <i class="fas fa-users fa-sm me-1"></i>
+          <span>Equipo</span>
+        </a>
+        <a href="#problema" role="menuitem" class="nav-link">
+          <i class="fas fa-bullseye fa-sm me-1"></i>
+          <span>Problema</span>
+        </a>
+        <a href="#tecnologia" role="menuitem" class="nav-link">
+          <i class="fas fa-code fa-sm me-1"></i>
+          <span>Tecnología</span>
+        </a>
+      </div>
 
-    <div class="author-card">
-      <img src="img/avatar-placeholder.png" class="avatar-lg" alt="">
-      <div>
-        <h3>Henry Fabian Guillen Villacorte</h3>
-        <span>222034041</span>
-        <p>Backend e IA. Python, Java, PostgreSQL. Diseño de sistemas escalables.</p>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-pressed="false" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">
+          <i class="fa-regular fa-sun"></i>
+        </button>
+        <button id="menu-toggle" class="icon-btn d-md-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
 
-    <div class="author-card">
-      <img src="img/nidia.jpg" class="avatar-lg" alt="">
-      <div>
-        <h3>Nidia Jael Muñoz Oviedo</h3>
-        <span>222034025</span>
-        <p>Python, JavaScript y TypeScript. Enfoque práctico y aprendizaje continuo.</p>
+    <div id="mobile-menu" class="mobile-menu container" hidden>
+      <a href="#integrantes" class="mobile-nav-link">
+        <i class="fas fa-users fa-sm me-2"></i>
+        Equipo
+      </a>
+      <a href="#problema" class="mobile-nav-link">
+        <i class="fas fa-bullseye fa-sm me-2"></i>
+        Problema
+      </a>
+      <a href="#tecnologia" class="mobile-nav-link">
+        <i class="fas fa-code fa-sm me-2"></i>
+        Tecnología
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO mejorada -->
+  <header class="hero" aria-labelledby="main-heading">
+    <div class="hero-container container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 id="main-heading" class="hero-title">Diplomado-MA26 — Grupo 2</h1>
+          <p class="hero-subtitle">Plataforma de preparación Saber Pro</p>
+          <p class="hero-description">Una solución moderna para optimizar el estudio y mejorar resultados</p>
+          
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">5</div>
+              <div class="stat-label">Integrantes</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">4</div>
+              <div class="stat-label">Tecnologías</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Accesible</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-container">
+            <div class="gradient-circle circle-1"></div>
+            <div class="gradient-circle circle-2"></div>
+            <div class="gradient-circle circle-3"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Explorar</span>
+        <i class="fas fa-chevron-down"></i>
       </div>
     </div>
+  </header>
 
-    <div class="author-card">
-      <img src="img/avatar-placeholder.png" class="avatar-lg" alt="">
-      <div>
-        <h3>Daniel Alejandro Lasso Molina</h3>
-        <span>222034024</span>
-        <p>Backend Node.js y Django. PostgreSQL y MySQL. github.com/Gebertwo</p>
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="main-content container">
+    
+    <!-- INTEGRANTES - Diseño mejorado -->
+    <section id="integrantes" class="section animate" data-delay="0.1">
+      <div class="section-header">
+        <div class="header-content">
+          <h2 class="section-title">
+            <i class="fas fa-users me-2"></i>
+            Nuestro Equipo
+          </h2>
+          <p class="section-subtitle">Conoce a los profesionales detrás del proyecto</p>
+        </div>
+        <div class="header-badge">
+          <span class="badge">5 miembros</span>
+        </div>
+      </div>
+
+      <div class="team-grid">
+        <!-- Miembro 1 -->
+        <article class="team-card animate" data-delay="0.1">
+          <div class="team-card-header">
+            <div class="member-avatar">
+              <img src="img/henry.jpg" alt="Foto de Henry Fabian Guillen Villacorte" loading="lazy">
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Henry Fabian Guillen Villacorte</h3>
+              <div class="member-role">Backend & IA</div>
+              <div class="member-id">Especialista</div>
+            </div>
+          </div>
+          <div class="team-card-body">
+            <p class="member-bio">Desarrollador enfocado en backend e inteligencia artificial. Diseño de soluciones escalables y basadas en datos.</p>
+            <div class="member-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="team-card-footer">
+            <div class="expertise">
+              <i class="fas fa-star fa-xs"></i>
+              <span>Especialista en Backend</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Miembro 2 -->
+        <article class="team-card animate" data-delay="0.15">
+          <div class="team-card-header">
+            <div class="member-avatar">
+              <img src="img/nidia.jpg" alt="Foto de Nidia Jael Muñoz Oviedo" loading="lazy">
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Nidia Jael Muñoz Oviedo</h3>
+              <div class="member-role">Full Stack</div>
+              <div class="member-id">ID: 222034025</div>
+            </div>
+          </div>
+          <div class="team-card-body">
+            <p class="member-bio">Estudiante y entusiasta del desarrollo, enfocada en soluciones prácticas y aprendizaje continuo.</p>
+            <div class="member-skills">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="team-card-footer">
+            <div class="expertise">
+              <i class="fas fa-code fa-xs"></i>
+              <span>Desarrollo Full Stack</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Miembro 3 -->
+        <article class="team-card animate" data-delay="0.2">
+          <div class="team-card-header">
+            <div class="member-avatar">
+              <img src="img/Daniel.png" alt="Foto de Daniel Alejandro Lasso Molina" loading="lazy">
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Daniel Alejandro Lasso Molina</h3>
+              <div class="member-role">Backend Expert</div>
+              <div class="member-id">github.com/Gebertwo</div>
+            </div>
+          </div>
+          <div class="team-card-body">
+            <p class="member-bio">Especialista en backend: APIs, diseño de datos y optimización de rendimiento.</p>
+            <div class="member-skills">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="team-card-footer">
+            <div class="expertise">
+              <i class="fas fa-server fa-xs"></i>
+              <span>Arquitectura Backend</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Miembro 4 -->
+        <article class="team-card animate" data-delay="0.25">
+          <div class="team-card-header">
+            <div class="member-avatar">
+              <img src="img/Omar.jpeg" alt="Foto de Omar Jhon Hualpa Ascuntar" loading="lazy">
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Omar Jhon Hualpa Ascuntar</h3>
+              <div class="member-role">Arquitectura</div>
+              <div class="member-id">ID: 220034146</div>
+            </div>
+          </div>
+          <div class="team-card-body">
+            <p class="member-bio">Interés en arquitectura de aplicaciones y soluciones modulares mantenibles.</p>
+            <div class="member-skills">
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">.NET</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="team-card-footer">
+            <div class="expertise">
+              <i class="fas fa-project-diagram fa-xs"></i>
+              <span>Arquitectura de Sistemas</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Miembro 5 -->
+        <article class="team-card highlight animate" data-delay="0.3">
+          <div class="team-card-header">
+            <div class="member-avatar">
+              <img src="img/Marily.jpeg" alt="Foto de Marily Yojana Botina Galeano" loading="lazy">
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Marily Yojana Botina Galeano</h3>
+              <div class="member-role">Frontend & UX</div>
+              <div class="member-id">ID: 222034053</div>
+            </div>
+          </div>
+          <div class="team-card-body">
+            <p class="member-bio">Interesada en experiencias de usuario y frontend; aporta diseño y accesibilidad.</p>
+            <div class="member-skills">
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">UX Design</span>
+            </div>
+          </div>
+          <div class="team-card-footer">
+            <div class="expertise">
+              <i class="fas fa-paint-brush fa-xs"></i>
+              <span>Diseño UX/UI</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROBLEMA - Diseño mejorado -->
+    <section id="problema" class="section animate" data-delay="0.35">
+      <div class="section-header">
+        <div class="header-content">
+          <h2 class="section-title">
+            <i class="fas fa-bullseye me-2"></i>
+            El Desafío Educativo
+          </h2>
+          <p class="section-subtitle">Transformando la preparación para el Saber Pro</p>
+        </div>
+        <div class="header-badge">
+          <span class="badge">Solución</span>
+        </div>
+      </div>
+
+      <div class="problem-solution-grid">
+        <div class="problem-card">
+          <div class="problem-header">
+            <div class="problem-icon">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h3>Problema Actual</h3>
+          </div>
+          <div class="problem-body">
+            <ul class="problem-list">
+              <li>
+                <i class="fas fa-times-circle fa-xs"></i>
+                <span>Recursos de estudio dispersos y desorganizados</span>
+              </li>
+              <li>
+                <i class="fas fa-times-circle fa-xs"></i>
+                <span>Falta de personalización en rutas de aprendizaje</span>
+              </li>
+              <li>
+                <i class="fas fa-times-circle fa-xs"></i>
+                <span>Barreras de acceso para estudiantes con limitaciones</span>
+              </li>
+              <li>
+                <i class="fas fa-times-circle fa-xs"></i>
+                <span>Falta de seguimiento y métricas de progreso</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="solution-card highlight">
+          <div class="solution-header">
+            <div class="solution-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Nuestra Solución</h3>
+          </div>
+          <div class="solution-body">
+            <p class="solution-description">
+              Plataforma web centralizada que ofrece rutas de estudio personalizadas, ejercicios interactivos y seguimiento detallado del progreso.
+            </p>
+            
+            <div class="solution-features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Personalización</h4>
+                  <p>Rutas de estudio adaptadas a cada estudiante</p>
+                </div>
+              </div>
+              
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Seguimiento</h4>
+                  <p>Métricas detalladas de progreso y rendimiento</p>
+                </div>
+              </div>
+              
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-universal-access"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Accesibilidad</h4>
+                  <p>Diseño inclusivo para todos los estudiantes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGÍA - Diseño mejorado -->
+    <section id="tecnologia" class="section animate" data-delay="0.4">
+      <div class="section-header">
+        <div class="header-content">
+          <h2 class="section-title">
+            <i class="fas fa-code me-2"></i>
+            Stack Tecnológico
+          </h2>
+          <p class="section-subtitle">Tecnologías modernas para una solución escalable</p>
+        </div>
+        <div class="header-badge">
+          <span class="badge">4 tecnologías</span>
+        </div>
+      </div>
+
+      <div class="tech-stack">
+        <div class="tech-category">
+          <h3 class="tech-category-title">Frontend</h3>
+          <div class="tech-cards">
+            <div class="tech-card-item animate" data-delay="0.1">
+              <div class="tech-icon react">
+                <i class="fab fa-react"></i>
+              </div>
+              <h4>React</h4>
+              <p class="tech-description">Biblioteca para interfaces de usuario</p>
+              <div class="tech-tags">
+                <span>Componentes</span>
+                <span>Hooks</span>
+                <span>Estado</span>
+              </div>
+            </div>
+            
+            <div class="tech-card-item animate" data-delay="0.15">
+              <div class="tech-icon typescript">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <h4>TypeScript</h4>
+              <p class="tech-description">JavaScript con tipado estático</p>
+              <div class="tech-tags">
+                <span>Tipado</span>
+                <span>Escalabilidad</span>
+                <span>Mantenimiento</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 class="tech-category-title">Backend & Base de Datos</h3>
+          <div class="tech-cards">
+            <div class="tech-card-item animate" data-delay="0.2">
+              <div class="tech-icon java">
+                <i class="fab fa-java"></i>
+              </div>
+              <h4>Spring Boot</h4>
+              <p class="tech-description">Framework para aplicaciones Java</p>
+              <div class="tech-tags">
+                <span>REST API</span>
+                <span>Seguridad</span>
+                <span>Escalable</span>
+              </div>
+            </div>
+            
+            <div class="tech-card-item animate" data-delay="0.25">
+              <div class="tech-icon database">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4>PostgreSQL</h4>
+              <p class="tech-description">Sistema de base de datos relacional</p>
+              <div class="tech-tags">
+                <span>SQL</span>
+                <span>Escalable</span>
+                <span>Confiable</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER mejorado -->
+  <footer class="site-footer">
+    <div class="footer-container container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">G2</div>
+          <div class="footer-info">
+            <h3>Grupo 2 — Diplomado MA26</h3>
+            <p>Plataforma de preparación Saber Pro</p>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Proyecto</h4>
+            <a href="#integrantes">Equipo</a>
+            <a href="#problema">Solución</a>
+            <a href="#tecnologia">Tecnología</a>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Valores</h4>
+            <a href="#" class="disabled">Innovación</a>
+            <a href="#" class="disabled">Accesibilidad</a>
+            <a href="#" class="disabled">Eficiencia</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>© 2024 Plataforma Saber Pro — Grupo 2. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-actions">
+          <button id="back-to-top" class="footer-btn" aria-label="Volver al inicio">
+            <i class="fas fa-arrow-up"></i>
+            <span>Subir</span>
+          </button>
+        </div>
       </div>
     </div>
-
-    <div class="author-card">
-      <img src="img/Marily.jpeg" alt="Marily" class="avatar-lg" alt="">
-      <div>
-        <h3>Marily Yojana Botina Galeano</h3>
-        <span>222034053</span>
-        <p>
-          Estudiante con interés en frontend. Conocimientos básicos en Python y PostgreSQL; motivada
-          en metodologías ágiles y mejora continua.
-        </p>
-      </div>
-    </div>
-
-    <div class="author-card">
-      <img src="img/Omar.jpeg" alt="Omar" class="avatar-lg" alt="">
-      <div>
-        <h3>Omar Jhon Hualpa Ascuntar</h3>
-        <span>220034146</span>
-        <p>
-          Desarrollador con interés en aplicaciones web y arquitectura; experiencia en C#, .NET y
-          SQL. Enfocado en soluciones modulares y mantenibles.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROBLEMA -->
-  <section>
-    <h2 class="section-title">Problema y propuesta</h2>
-    <p class="lead-text">
-      Los estudiantes presentan dificultades para acceder a herramientas integrales,
-      accesibles y estructuradas para la preparación del examen Saber Pro.
-    </p>
-    <p>
-      Proponemos una plataforma web moderna, centralizada y flexible que optimice
-      la preparación académica mediante recursos personalizados.
-    </p>
-  </section>
-
-  <!-- STACK -->
-  <section>
-    <h2 class="section-title">Stack tecnológico</h2>
-    <div class="tech-grid">
-      <div class="tech-card">React + TypeScript</div>
-      <div class="tech-card">Bootstrap UI</div>
-      <div class="tech-card">Java · Spring Boot</div>
-      <div class="tech-card">PostgreSQL</div>
-    </div>
-  </section>
-
-  <footer>
-    Grupo 2 · Diplomado MA26 · 2026
   </footer>
 
-</main>
-
-<script src="renderer.js" defer></script>
+  <!-- Script -->
+  <script src="renderer.js" defer></script>
 </body>
 </html>
