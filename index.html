@@ -1,19 +1,101 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diplomado-MA26 — Grupo 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+  <body class="bg-light text-dark">
+    <header class="bg-primary text-white py-4 mb-4">
+      <div class="container">
+        <h1 class="h2 mb-0">Diplomado-MA26 — Grupo 2</h1>
+        <p class="mb-0">README profesional — versión Bootstrap</p>
+      </div>
+    </header>
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    <main class="container mb-5">
+      <section class="mb-4">
+        <h2 class="h4">Integrantes</h2>
+        <ul class="list-group mt-2">
+          <li class="list-group-item">Henry Fabian Guillen Villacorte — 222034041</li>
+        </ul>
+      </section>
+
+      <section class="mb-4">
+        <h2 class="h4">Información de los autores</h2>
+        <div class="row g-3 mt-2">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h6">Henry Fabian Guillen Villacorte</h3>
+                <p class="mb-0">Desarrollador de software con enfoque en backend e inteligencia artificial. Trabajo con Python, Java y PostgreSQL; me interesa diseñar soluciones escalables y basadas en datos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h6">Nidia Jael Muñoz Oviedo</h3>
+                <p class="mb-0">Estudiante y entusiasta del desarrollo de software. Conocimientos en Python, JavaScript, TypeScript y PostgreSQL. Interesada en proyectos prácticos para fortalecer habilidades.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h6">Daniel Alejandro Lasso Molina</h3>
+                <p class="mb-0">Desarrollador Backend — TypeScript, JavaScript y Python. Especializado en Node.js y Django; manejo experto de PostgreSQL y MySQL. github.com/Gebertwo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h6">Omar Jhon Hualpa Ascuntar</h3>
+                <p class="mb-0">Desarrollador con interés en aplicaciones web y arquitectura; experiencia en C#, .NET y SQL. Enfocado en soluciones modulares y mantenibles.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="h6">Marily Yojana Botina Galeano</h3>
+                <p class="mb-0">Estudiante con interés en frontend. Conocimientos básicos en Python y PostgreSQL; motivada en metodologías ágiles y mejora continua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-4">
+        <h2 class="h4">Descripción del problema</h2>
+        <p class="mt-2">Los estudiantes de pregrado tienen dificultades para acceder a herramientas integrales y accesibles para prepararse para el examen Saber Pro. La oferta actual suele ser dispersa, poco personalizada o de difícil acceso, limitando una preparación estructurada y realista.</p>
+        <p>Propuesta: desarrollar una plataforma web que centralice recursos académicos, facilite el estudio autónomo y brinde un entorno flexible y accesible para la preparación del examen Saber Pro, optimizando rendimiento y equidad.</p>
+      </section>
+
+      <section class="mb-4">
+        <h2 class="h4">Stack tecnológico</h2>
+        <div class="row mt-2">
+          <div class="col-sm-6">
+            <ul class="list-unstyled">
+              <li><strong>Frontend:</strong> React.js + TypeScript</li>
+              <li><strong>UI:</strong> Bootstrap</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="list-unstyled">
+              <li><strong>Backend:</strong> Java (Spring Boot sugerido)</li>
+              <li><strong>DB:</strong> PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer class="pt-4 mt-4 border-top">
+        <p class="mb-0">Equipo: Grupo 2 — Diplomado-MA26</p>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
