@@ -48,7 +48,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub git@github.com",
+  "author": "GitHub <git@github.com>",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^40.0.0"
