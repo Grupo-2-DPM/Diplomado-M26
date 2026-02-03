@@ -8,7 +8,7 @@
     "dist": "electron-builder",
     "build": "electron-builder --dir"
   },
-    "build": {
+  "build": {
     "appId": "com.diplomado2026.prueba",
     "productName": "Diplomado2026-Presentación",
     "directories": {
@@ -24,7 +24,10 @@
       "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}"
     ],
     "win": {
-      "target": ["nsis", "portable"],
+      "target": [
+        "nsis",
+        "portable"
+      ],
       "icon": "build/icon.ico"
     },
     "mac": {
@@ -32,7 +35,10 @@
       "icon": "build/icon.icns"
     },
     "linux": {
-      "target": ["AppImage", "deb"],
+      "target": [
+        "AppImage",
+        "deb"
+      ],
       "icon": "build/icon.png"
     },
     "nsis": {
